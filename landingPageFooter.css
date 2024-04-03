@@ -1,0 +1,30 @@
+body{
+    font-family: "Readex Pro", sans-serif;
+}
+.footer{
+display: flex;
+align-items: stretch;
+background:  #CDB4DB;
+}
+.footer div{
+
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.footer h1{
+    font-size: 50px;
+    cursor: pointer;
+}
+.midlle p{
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.end p{
+cursor: pointer;
+font-size: 20px;
+padding: 2px;
+}
