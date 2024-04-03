@@ -7,7 +7,6 @@ align-items: stretch;
 background:  #CDB4DB;
 }
 .footer div{
-
     color: rgb(0, 0, 0);
     margin: 10px;
     text-align: center;
@@ -15,16 +14,15 @@ background:  #CDB4DB;
     font-size: 30px;
 }
 .footer h1{
-    font-size: 50px;
-    cursor: pointer;
+    font-size: 50px;  
 }
-.midlle p{
-    margin: 5px;
+.midlle a{
     font-size: 20px;
-    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
-.end p{
-cursor: pointer;
+.end a{
 font-size: 20px;
-padding: 2px;
+text-decoration: none;
+color: black;
 }
