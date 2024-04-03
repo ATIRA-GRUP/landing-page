@@ -3,7 +3,7 @@
   padding: 0;
   font-size: 100%;
 }
-.pw-fnt-22 {
+.fnt-size-22 {
   font-size: 22px;
 }
 header {
@@ -14,35 +14,33 @@ header {
   left: 0;
   padding: 5px;
 }
+.header-logo {
+  top: 60px;
+  width: 100px;
+  margin-left: 30px;
+}
+.header-nav-lnks {
+  top: 80px;
+}
 header div {
   align-items: center;
   display: flex;
   position: relative;
   justify-content: center;
 }
-.pw-top-60 {
-  top: 60px;
-}
-.pw-top-80 {
-  top: 80px;
-}
-ol li {
+ul li {
   display: inline-block;
   margin: 0 2rem;
 }
-ol li a {
+ul li a {
   text-decoration: none;
 }
-.pw-logo {
-  width: 100px;
-  margin-left: 30px;
-}
-.pw-align-center {
+.align-center {
   align-items: center;
 }
-.pw-d-inline-block {
+.d-inline-block {
   display: inline-block;
 }
-.pw-w-100 {
+.w-100 {
   width: 100%;
 }
