@@ -127,43 +127,56 @@ details p {
   flex-grow: 1;
   padding: 0 5px;
 }
-.prev-products {
+.cards-section {
+  margin: 20px 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  margin: 20px 0;
+  text-align: start;
 }
-.prev-product {
-  border: gray solid 1px;
-  overflow: hidden;
-  border-radius: 1rem;
+.cards-img {
+  margin: auto;
+  width: 100px;
+  padding-bottom: 5px;
+}
+.cards {
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px;
   text-align: center;
-  margin: 20px 0 20px 0;
-  max-width: 350px;
-  margin: 1rem 1rem;
+  position: relative;
 }
-.prev-img {
-  width: 350px;
-}
-.prev-name {
-  padding: 5px 0;
-}
-.prev-type {
-  font-weight: 300;
-  padding: 5px 0;
-}
-.prev-dicription {
-  font-weight: 300;
+.card-par {
+  max-width: 300px;
   line-height: 25px;
-  padding: 10px 5px;
 }
-.prev-visit {
-  text-decoration: none;
-  background-color: #9b51e0;
+.card-price {
+  position: absolute;
+  left: 0;
+  background-color: purple;
+  padding: 3px 10px;
   color: white;
-  display: inline-block;
-  padding: 10px 20px;
-  margin-bottom: 10px;
+  border-radius: 0 1rem 1rem 0;
+}
+.card-inp {
+  display: block;
+  margin: 10px 0;
+  background-color: purple;
+  color: white;
+  padding: 3px;
+  text-decoration: none;
   border-radius: 2rem;
+}
+.card-h1 {
+  font-size: 25px;
+}
+.card-hr {
+  height: 3px;
+  border: none;
+  background-color: #cdb4db;
+  margin: 5px 0;
+  opacity: 1;
+  border-radius: 2px;
 }
