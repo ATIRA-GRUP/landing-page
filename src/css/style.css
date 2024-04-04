@@ -183,40 +183,83 @@ details p {
 .prev-products {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  margin: 20px 0;
+  text-align: start;
+}
+.cards-img {
+  margin: auto;
+  width: 100px;
+  padding-bottom: 5px;
+}
+.cards {
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px;
+  text-align: center;
+  position: relative;
+}
+.card-par {
+  max-width: 300px;
+  line-height: 25px;
+}
+.card-price {
+  position: absolute;
+  left: 0;
+  background-color: purple;
+  padding: 3px 10px;
+  color: white;
+  border-radius: 0 1rem 1rem 0;
+}
+.card-inp {
+  display: block;
+  margin: 10px 0;
+  background-color: purple;
+  color: white;
+  padding: 3px;
+  text-decoration: none;
+  border-radius: 2rem;
+}
+.card-h1 {
+  font-size: 25px;
+}
+.card-hr {
+  height: 3px;
+  border: none;
+  background-color: #cdb4db;
+  margin: 5px 0;
+  opacity: 1;
+  border-radius: 2px;
+}
+.prev-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .prev-product {
-  border: gray solid 1px;
-  overflow: hidden;
+  border: #9b51e0 1px solid;
   border-radius: 1rem;
+  overflow: hidden;
   text-align: center;
-  margin: 20px 0 20px 0;
-  max-width: 350px;
-  margin: 1rem 1rem;
+  margin: 10px 0;
 }
 .prev-img {
-  width: 350px;
-}
-.prev-name {
-  padding: 5px 0;
-}
-.prev-type {
-  font-weight: 300;
-  padding: 5px 0;
+  width: 300px;
+  margin: auto;
 }
 .prev-dicription {
-  font-weight: 300;
-  line-height: 25px;
-  padding: 10px 5px;
+  max-width: 300px;
+}
+.prev-type {
+  font-weight: 400;
 }
 .prev-visit {
-  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
   background-color: #9b51e0;
   color: white;
-  display: inline-block;
-  padding: 10px 20px;
-  margin-bottom: 10px;
   border-radius: 2rem;
+  text-decoration: none;
+  margin: 10px 0;
 }
