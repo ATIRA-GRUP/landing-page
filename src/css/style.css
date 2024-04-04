@@ -266,28 +266,34 @@ details p {
 body {
   font-family: "Readex Pro", sans-serif;
 }
-.footer {
+.main-div-footer {
   display: flex;
-  align-items: stretch;
-  background: #cdb4db;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.footer div {
-  color: rgb(0, 0, 0);
-  margin: 10px;
+.first {
   text-align: center;
-  line-height: 75px;
-  font-size: 30px;
 }
-.footer h1 {
-  font-size: 50px;
+.midlle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-.midlle a {
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
+.end {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
+.midlle a,
 .end a {
-  font-size: 20px;
   text-decoration: none;
-  color: black;
+  padding: 5px 0;
+}
+.footer-section {
+  margin-top: 50px;
+  background-color: #bde0fe;
+  padding: 1rem 0;
+}
+.footer-items-padding {
+  padding: 10px 0;
 }
