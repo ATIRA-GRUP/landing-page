@@ -127,3 +127,56 @@ details p {
   flex-grow: 1;
   padding: 0 5px;
 }
+.cards-section {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: start;
+}
+.cards-img {
+  margin: auto;
+  width: 100px;
+  padding-bottom: 5px;
+}
+.cards {
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px;
+  text-align: center;
+  position: relative;
+}
+.card-par {
+  max-width: 300px;
+  line-height: 25px;
+}
+.card-price {
+  position: absolute;
+  left: 0;
+  background-color: purple;
+  padding: 3px 10px;
+  color: white;
+  border-radius: 0 1rem 1rem 0;
+}
+.card-inp {
+  display: block;
+  margin: 10px 0;
+  background-color: purple;
+  color: white;
+  padding: 3px;
+  text-decoration: none;
+  border-radius: 2rem;
+}
+.card-h1 {
+  font-size: 25px;
+}
+.card-hr {
+  height: 3px;
+  border: none;
+  background-color: #cdb4db;
+  margin: 5px 0;
+  opacity: 1;
+  border-radius: 2px;
+}
