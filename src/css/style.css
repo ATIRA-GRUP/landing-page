@@ -20,7 +20,7 @@
   height: 100vh;
 }
 .hero-img {
-  width: 400px;
+  max-width: 400px;
 }
 .hero-section {
   display: flex;
@@ -67,23 +67,22 @@ header {
   z-index: 55;
 }
 .header-logo {
-  top: 60px;
+  top: 70px;
   width: 100px;
-  margin-left: 30px;
 }
 .header-nav-lnks {
-  top: 80px;
+  top: 70px;
 }
 header div {
   align-items: center;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  justify-content: center;
 }
 ul li {
   display: inline-block;
-  margin: 0 2rem;
+  margin: 0 10px;
 }
 ul li a {
   text-decoration: none;
@@ -125,6 +124,7 @@ details p {
   max-width: 350px;
   margin-top: 1px;
   padding-right: 5px;
+  flex-shrink: 1;
 }
 .faq-div {
   flex-grow: 1;
@@ -289,12 +289,13 @@ body {
   text-align: start;
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
 }
 .end {
   text-align: start;
   display: flex;
   flex-direction: column;
+}
+footer div a {
   margin-left: 10px;
 }
 .midlle a,
@@ -303,7 +304,7 @@ body {
   padding: 5px 0;
 }
 .footer-section {
-  margin-top: 50px;
+  margin-top: 20px;
   background-color: #bde0fe;
   padding: 1rem 0;
 }
@@ -322,31 +323,35 @@ body {
 @media (min-width: 768px) {
 }
 @media (min-width: 992px) {
+  .main-div-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .first {
+    text-align: center;
+  }
+  .midlle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .end {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  footer div a {
+    margin-left: 0;
+  }
 }
 @media (min-width: 1200px) {
-  .h-100vh {
-    height: 100vh;
-  }
-  .hero-img {
-    width: 400px;
-  }
   .hero-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-  }
-  .hero-c2a {
-    background-color: #9b51e0;
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 5rem;
-    text-decoration: none;
-    color: white;
-  }
-  .hero-h1 {
-    font-size: 25px;
   }
   .hero-c2a-flex {
     display: flex;
@@ -358,21 +363,6 @@ body {
     flex-direction: column;
     max-width: 500px;
     text-align: center;
-  }
-  .p-30 {
-    padding: 30px;
-  }
-  .rounded {
-    border-radius: 2rem;
-  }
-  header {
-    background-color: #ffc8dd;
-    position: sticky;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 5px;
-    z-index: 55;
   }
   .header-logo {
     top: 60px;
@@ -389,38 +379,6 @@ body {
     position: relative;
     justify-content: center;
   }
-  ul li {
-    display: inline-block;
-    margin: 0 2rem;
-  }
-  ul li a {
-    text-decoration: none;
-  }
-  .align-center {
-    align-items: center;
-  }
-  .d-inline-block {
-    display: inline-block;
-  }
-  .w-100 {
-    width: 100%;
-  }
-  details summary {
-    list-style: none;
-  }
-  summary {
-    padding: 20px;
-    margin: 2px 0;
-    background-color: #9b51e0;
-    color: white;
-  }
-  details p {
-    padding: 20px;
-    background-color: #ffc8dd;
-  }
-  .first-quest {
-    border-radius: 1rem 1rem 0 0;
-  }
   .faq-container {
     display: flex;
     justify-content: space-around;
@@ -428,16 +386,6 @@ body {
     align-items: center;
     margin-top: 40px;
     padding: 1rem;
-  }
-  .faq-img {
-    max-width: 350px;
-    margin-top: 1px;
-    padding-right: 5px;
-  }
-  .faq-div {
-    flex-grow: 1;
-    padding: 0 5px;
-    order: 2;
   }
   .cards-section {
     margin: 20px 0;
@@ -448,53 +396,6 @@ body {
     align-items: center;
     text-align: start;
   }
-  .cards-img {
-    margin: auto;
-    width: 100px;
-    padding-bottom: 5px;
-    order: 1;
-  }
-  .cards {
-    padding: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 1px;
-    text-align: center;
-    position: relative;
-    max-width: 300px;
-  }
-  .card-par {
-    max-width: 300px;
-    line-height: 25px;
-  }
-  .card-price {
-    position: absolute;
-    left: 0;
-    background-color: purple;
-    padding: 3px 10px;
-    color: white;
-    border-radius: 0 1rem 1rem 0;
-  }
-  .card-inp {
-    display: block;
-    margin: 10px 0;
-    background-color: purple;
-    color: white;
-    padding: 3px;
-    text-decoration: none;
-    border-radius: 2rem;
-  }
-  .card-h1 {
-    font-size: 25px;
-  }
-  .card-hr {
-    height: 3px;
-    border: none;
-    background-color: #cdb4db;
-    margin: 5px 0;
-    opacity: 1;
-    border-radius: 2px;
-  }
   .prev-products {
     display: flex;
     flex-wrap: wrap;
@@ -504,72 +405,10 @@ body {
     margin-top: 50px;
     padding: 1rem;
   }
-  .cards-img {
-    margin: auto;
-    width: 100px;
-    padding-bottom: 5px;
-  }
-  .cards {
-    padding: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: #9b51e0 2px solid;
-    text-align: center;
-    position: relative;
-  }
-  .card-par {
-    max-width: 300px;
-    line-height: 25px;
-  }
-  .card-price {
-    position: absolute;
-    left: 0;
-    background-color: purple;
-    padding: 3px 10px;
-    color: white;
-    border-radius: 0 1rem 1rem 0;
-  }
-  .card-inp {
-    display: block;
-    margin: 10px 0;
-    background-color: purple;
-    color: white;
-    padding: 3px;
-    text-decoration: none;
-    border-radius: 2rem;
-  }
-  .card-h1 {
-    font-size: 25px;
-  }
-  .card-hr {
-    height: 3px;
-    border: none;
-    background-color: #cdb4db;
-    margin: 5px 0;
-    opacity: 1;
-    border-radius: 2px;
-  }
   .prev-products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  }
-  .prev-product {
-    border: #9b51e0 2px solid;
-    border-radius: 1rem;
-    overflow: hidden;
-    text-align: center;
-    margin: 10px 0;
-  }
-  .prev-img {
-    width: 300px;
-    margin: auto;
-  }
-  .prev-dicription {
-    max-width: 300px;
-  }
-  .prev-type {
-    font-weight: 400;
   }
   .prev-visit {
     display: inline-block;
@@ -579,49 +418,6 @@ body {
     border-radius: 2rem;
     text-decoration: none;
     margin: 10px 0;
-  }
-  body {
-    font-family: "Readex Pro", sans-serif;
-  }
-  .main-div-footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .first {
-    text-align: center;
-  }
-  .midlle {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-  }
-  .end {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-  }
-  .midlle a,
-  .end a {
-    text-decoration: none;
-    padding: 5px 0;
-  }
-  .footer-section {
-    margin-top: 50px;
-    background-color: #bde0fe;
-    padding: 1rem 0;
-  }
-  .footer-items-padding {
-    padding: 10px 0;
-  }
-  .footer-logo {
-    width: 200px;
-  }
-  .m-auto {
-    margin: auto;
   }
 }
 @media (min-width: 1400px) {
